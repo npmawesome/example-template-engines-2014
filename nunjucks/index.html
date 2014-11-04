@@ -1,0 +1,13 @@
+{% extends "./nunjucks/layout.html" %}
+
+{% macro todos_macro(items) %}
+  <ul class="todos">
+    {% for item in items %}
+      {% include "./nunjucks/item_partial.html" %}
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+{% block body %}
+  {{ todos_macro(todos) }}
+{% endblock %}

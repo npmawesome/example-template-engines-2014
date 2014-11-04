@@ -1,0 +1,6 @@
+<li>
+  <label for="item_{$idx}">
+    <input id="item_{$idx}" type="checkbox" {?checked}checked{/checked}/>
+    <span>{title}</span>
+  </label>
+</li>

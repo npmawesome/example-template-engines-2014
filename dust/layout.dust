@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css"/>
+  </head>
+
+  <body>
+    <h1>Mustache.js Template Example</h1>
+
+    {+body/}
+  </body>
+</html>

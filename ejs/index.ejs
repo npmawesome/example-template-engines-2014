@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css"/>
+  </head>
+
+  <body>
+    <h1>EJS Template Example</h1>
+
+    <ul class="todos">
+      <% todos.forEach(function(item, index) { %>
+        <% include item_partial %>
+      <% }) %>
+    </ul>
+  </body>
+</html>
+

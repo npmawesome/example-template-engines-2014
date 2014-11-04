@@ -1,0 +1,9 @@
+mixin todos(items)
+  ul.todos
+    each item, index in items
+      li: include item_partial
+
+extends template
+
+block body
+  +todos(todos)

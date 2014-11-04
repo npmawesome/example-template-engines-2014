@@ -1,0 +1,6 @@
+<li>
+  <label for="item_{{ loop.index }}">
+    <input id="item_{{ loop.index }}" type="checkbox" {{ "checked" if item.checked }}/>
+    <span>{{ item.title }}</span>
+  </label>
+</li>

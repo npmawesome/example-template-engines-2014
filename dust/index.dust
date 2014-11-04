@@ -1,0 +1,11 @@
+{>layout/}
+
+{<body}
+  <ul class="todos">
+    {#todos}
+      {#stream}
+        {>item_partial/}
+      {/stream}
+    {/todos}
+  </ul>
+{/body}

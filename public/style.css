@@ -1,0 +1,15 @@
+body {
+  font-size: 1.5em;
+  font-family: Georgia;
+  padding: 2em;
+}
+
+ul.todos {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.todos input[type=checkbox] {
+  margin-right: 1em;
+}

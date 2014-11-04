@@ -1,0 +1,6 @@
+[
+  { "title": "Do some nerdy stuff" },
+  { "title": "Redesign website", "checked": true },
+  { "title": "Learn new Node.js framework" },
+  { "title": "Submit patch to Angular.js", "checked": true }
+]
