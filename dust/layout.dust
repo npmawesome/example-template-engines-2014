@@ -4,7 +4,7 @@
   </head>
 
   <body>
-    <h1>Mustache.js Template Example</h1>
+    <h1>Dust.js Streaming Template Example</h1>
 
     {+body/}
   </body>
