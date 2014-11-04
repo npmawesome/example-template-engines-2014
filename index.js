@@ -79,13 +79,5 @@ app.get('/ejs', function(req, res) {
   res.send(ejs.render(template, options));
 });
 
-app.get('/eco', function(req, res) {
-
-});
-
-app.get('/haml', function(req, res) {
-
-});
-
 app.listen(3000);
 console.log('Example is listening on http://127.0.0.1:3000');
