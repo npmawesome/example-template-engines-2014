@@ -7,5 +7,6 @@
     <h1>Dust.js Streaming Template Example</h1>
 
     {+body/}
+    <p><a href="/">back</a></p>
   </body>
 </html>
