@@ -1,9 +1,9 @@
-{% extends "./nunjucks/layout.html" %}
+{% extends "./layout.html" %}
 
 {% macro todos_macro(items) %}
   <ul class="todos">
     {% for item in items %}
-      {% include "./nunjucks/item_partial.html" %}
+      {% include "./item_partial.html" %}
     {% endfor %}
   </ul>
 {% endmacro %}
