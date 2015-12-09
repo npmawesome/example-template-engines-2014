@@ -6,6 +6,7 @@ var mustache = require('mustache');
 var dust = require('dustjs-linkedin');
 var ejs = require('ejs');
 var nunjucks = require('nunjucks');
+var dot  = require('dot');
 
 var app = express();
 
@@ -77,6 +78,25 @@ app.get('/ejs', function(req, res) {
     todos: todos
   };
   res.send(ejs.render(template, options));
+});
+
+
+
+app.get('/dot', function(req, res) {
+  var template = fs.readFileSync('./dot/index.html', 'utf8');
+
+  var dot_render = dot.template(template,undefined,
+       {
+        loadFile : function(path) {
+           return fs.readFileSync(__dirname +"/dot"+ path);
+        }
+  });
+
+  var options = {
+    filename: './dot/index.html',
+    todos: todos
+  };
+  res.send(dot_render(options));
 });
 
 app.listen(3000);

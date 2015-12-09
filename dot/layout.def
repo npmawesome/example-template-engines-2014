@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="/style.css"/>
+  </head>
+
+  <body>
+    <h1>doT Template Example</h1>
+
+    {{#def.content }}
+
+    <p><a href="/">back</a></p>
+  </body>
+</html>

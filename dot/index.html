@@ -1,0 +1,14 @@
+{{##def.content:
+  {{ function todos_macro(items) { }}
+    <ul class="todos">
+      {{~items: item:index }}
+          {{#def['item_partial'] || (def['item_partial'] = def.loadFile('/item_partial.def'))}}
+      {{~}}
+    </ul>
+  {{ } }}
+
+
+  {{ todos_macro(it.todos); }}
+
+#}}
+{{#def['layout'] || (def['layout'] = def.loadFile('/layout.def'))}}
